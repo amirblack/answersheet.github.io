@@ -11,21 +11,20 @@
     <!-- load css files and fonts and icons-->
     <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/bulma-rtl.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/learn.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body dir="rtl">
-        <!-- NavBar with hero img-->
-
+    
+    <!-- NavBar with hero img-->
     <section class="hero is-info is-fullheight">
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="./">
+                        <a class="navbar-item" href="../index.html">
                             <img src="../img/New-Design-Logo.png" alt="Logo">
                         </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
@@ -47,11 +46,9 @@
             </div>
         </div>
     </section>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="slide-inner">
+
+    <!-- learn section-->
+                <div class="slide-inner" data-aos="fade-down">
                     <img class="slide-image" src="../img/Icon.svg" />
                     <div class="slide-title">عرض جغرافیایی</div>
                     <div class="container has-text-centered">
@@ -68,9 +65,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner">
+                <div class="slide-inner" data-aos="fade-left">
                     <img class="slide-image" src="../img/Icon.svg" />
                     <div class="slide-title">طول جغرافیایی</div>
                     <div class="container has-text-centered">
@@ -87,10 +82,7 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner">
+                <div class="slide-inner" data-aos="fade-right">
                     <img class="slide-banner"
                         src="https://radshid.com/wp-content/uploads/2017/09/Latitude-and-longitude-400x275.png" />
                     <div class="slide-title">کاربرد طول و عرض جغرافیایی </div>
@@ -115,10 +107,7 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner">
+                <div class="slide-inner" data-aos="fade-up">
                     <img class="slide-banner"
                         src="https://radshid.com/wp-content/uploads/2017/09/Latitude-and-longitude-400x275.png" />
                     <div class="slide-title"> ادامه کاربرد طول و عرض جغرافیایی </div>
@@ -142,9 +131,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slide-inner">
+                <div class="slide-inner"  data-aos="fade-in">
                     <img class="slide-image" src="../img/completed-checkmark-done-complete-svgrepo-com.svg" />
                     <div class="slide-title">تموم شد!</div>
                     <div class="container">
@@ -157,28 +144,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
+
+    
 
     <script async type="text/javascript" src="../js/template.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            direction: "vertical",
-            grabCursor: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+      AOS.init();
     </script>
 </body>
 
