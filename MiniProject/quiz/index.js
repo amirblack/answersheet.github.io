@@ -39,11 +39,9 @@ for (let i = 0; i < getElement.length; i++) {
 
 // initialize swiper slider
 let swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
+    allowSlidePrev : false
   });
+
 
 /*
      after user select the answer 
