@@ -16,8 +16,10 @@
 </head>
 
 <body dir="rtl">
+    <!-- for checking device to start Quiz-->
+    <h1 id="alert" class="has-text-centered"></h1>
+   <div id="detect">
     <!-- swiper slider with Questions-->
-    <h1>فقط روی حالت دسکتاپ می توان سوالات را از روی نقشه انتخاب کنید! </h1>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide ">
@@ -151,12 +153,18 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
-
+    </div>
 <!-- loading js files-->
     <script async type="text/javascript" src="../js/template.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.17/dist/sweetalert2.all.min.js"></script>
     <script src="./index.js"></script>
-
+    <script>
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        // true for mobile device
+        document.getElementById('alert').innerHTML = "فقط روی دسکتاپ امتحان قابل برگزاری است."
+        document.getElementById('detect').style.display = "none"
+        }
+    </script>
 </body>
 </html>
