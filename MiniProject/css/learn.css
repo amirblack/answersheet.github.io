@@ -1,0 +1,120 @@
+html,
+body {
+  font-family: "Vazir", sans-serif;
+  position: relative;
+  height: 100%;
+}
+
+.hero.is-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url('https://unsplash.it/1200/900?random') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero .nav,
+.hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.hero .subtitle {
+  padding: 3rem 0;
+  line-height: 1.5;
+}
+
+.title {
+  text-align: justify;
+}
+
+.slide-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+  background-color: #6002EE;
+}
+
+.slide-image {
+  width: 128px;
+  height: 128px;
+}
+
+.slide-banner {
+  width: 400px;
+  height: 275px;
+}
+
+.slide-title {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
+.slide-text {
+  color: white;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.slide-end {
+  color: white;
+  font-size: 18px;
+}
+
+.slide-title-black {
+  font-size: 28px;
+  color: black;
+  font-weight: 700;
+  margin: 24px 0;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+}
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.codepenStyle {
+  height: 500px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  margin: 1em 0;
+  padding: 1em;
+}
+.head-title {
+  font-size: 42px;
+}
